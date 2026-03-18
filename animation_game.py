@@ -1,15 +1,3 @@
-# def fact(x):
-#     x
-#     fact = 1
-
-#     for i in range(1 , x+1):
-#      fact = fact*i
-    
-#     print("factorial" , fact)
-
-
-# fact(6)
-
 import pygame
 import random
 
@@ -17,8 +5,8 @@ import random
 pygame.init()
 
 # Screen dimensions
-WIDTH = 800
-HEIGHT = 600
+WIDTH = 1500
+HEIGHT = 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Bouncing Ball Animation Game")
 
