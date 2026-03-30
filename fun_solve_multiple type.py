@@ -1,12 +1,13 @@
 
-# student = {
-#     "name":"diwakar",
-#     "Age":18,
-#     "course":"BCA"
-# }
-# # print(student)    #first method to create dictionary
+student = {
+    "name":"diwakar",
+    "Age":18,
+    "course":"BCA"
+}
+# print(student)    #first method to create dictionary
 
-# student = dict("name"=""diwakar"","Age"=18,"course"="BCA") #Second Method
+student = dict("name":"diwakar","Age":18,"course":"BCA") #Second Method
+print(student)
 
 
 # student = dict(name="diwakar",Age=18,course="BCA")
