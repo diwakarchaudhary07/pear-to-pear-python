@@ -1,25 +1,29 @@
 
-student = {
-    "name":"Ashish",
-    "Age":20,
-    "course":"BTech"
-}
-# print(student)    #first method to create dictionary
+# student = {
+#     "name":"diwakar",
+#     "Age":18,
+#     "course":"BCA"
+# }
+# # print(student)    #first method to create dictionary
+
+# student = dict("name"=""diwakar"","Age"=18,"course"="BCA") #Second Method
 
 
-student = dict(name="Ashish",Age=20,course="Btech")
-print(student)
+# student = dict(name="diwakar",Age=18,course="BCA")
+# print(student)
 
-# student=dict([("name","Ashish"),("Age",20),("Course","Btech")]) #third Method
+# student=dict([("name","diwakar"),("Age",18),("Course","BCA")]) #third Method
 
 # student = {
-#     "name":"Ashish",
-#     "Age":20,
-#     "course":"BTech"
+#     "name":"diwakar",
+#     "Age":18,
+#     "course":"BCA"
 # }
-# print(student.get("name"))   #first method to create dictionary
-# student["name"]="Arvin"
-# print(student.get("name"))
+# # print(student.get("name"))   #first method to create dictionary
+# student["name"]="Rahul"
+# student["Age"]="19"
+# student["course"]="Bsc"
+# # print(student.get("name"))
 # print(student.keys())
 # print(student.values())
 
