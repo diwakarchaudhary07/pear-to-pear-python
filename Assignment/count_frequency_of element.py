@@ -75,3 +75,14 @@ for key, value in result.items():
 
 
 
+
+#      Count Frequency of Elements
+# Write a function that counts how many times each element appears in a list.
+# Example:
+# Copy code
+
+# Input: [1,2,2,3,3,3]
+# Output:
+# 1 → 1
+# 2 → 2
+# 3 → 3
