@@ -1,14 +1,3 @@
-# 1. Student Class
-
-# Ek class Student banao jisme:
-
-# name, roll number, marks input lo
-
-# ek function banao jo details print kare
-
-# ek function banao jo pass/fail bataye
-
-
 class student:
     def __init__(self,name,roll_no,marks):
         self.name = name
