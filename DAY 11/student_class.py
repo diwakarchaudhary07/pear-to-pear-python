@@ -25,9 +25,9 @@ class student:
     def pass_fail(self):
         self.marks=marks
         if marks >= 40:
-            print("pass",marks)
+            print("pass:",marks)
         else:
-            print("fail",marks)
+            print("fail:",marks)
 
 name = input("enter your name:")
 roll_no =int(input("enter your roll no:"))    
