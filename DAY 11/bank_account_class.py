@@ -22,6 +22,7 @@ class bank_account:
         pin = int(input("enter pin:"))
         if acc_num==self.acc_num and name==self.name and pin==self.__correct_pin:
             print("show bank balance",self.__balance)
+            return True
         else:
             print("incorrect verifaction!plese try again")
 
@@ -30,7 +31,7 @@ class bank_account:
             amount = int(input("fill deposit balance:"))
             ifsc=input("fill ifsc code:")
             if ifsc==self.ifsc_code :
-              self__balance =+ amount
+              self.__balance += amount
               print("deposit sucessful")
               print("balance:",self.__balance)
             
@@ -41,8 +42,8 @@ class bank_account:
         if self.verifaction():
             amount = int(input("fill withdraw amount:"))
             pin = int(input("enter your pin:"))
-            if pin==self.__correct_pin__pin:
-                self.__balance-=amount
+            if pin==self.__correct_pin:
+                self.__balance -= amount
                 print("withdraw sucessful")
                 print("balance:",self.__balance)
 
