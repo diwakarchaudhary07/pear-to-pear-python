@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ludo Game</title>
+    <style>
+        canvas {
+            background: #f0f0f0;
+            display: block;
+            margin: auto;
+        }
+
+        #dice {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="board" width="400" height="400"></canvas>
+    <div id="dice">
+        <button onclick="rollDice()">Roll Dice</button>
+        <p id="result">Dice: -</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("board");
+        const ctx = canvas.getContext("2d");
+
+        // Draw simple Ludo board (just 4 colored areas)
+        function drawBoard() {
+            ctx.fillStyle = "red";
+            ctx.fillRect(0, 0, 200, 200);
+
+            ctx.fillStyle = "green";
+            ctx.fillRect(200, 0, 200, 200);
+
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(0, 200, 200, 200);
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(200, 200, 200, 200);
+
+            ctx.fillStyle = "white";
+            ctx.fillRect(150, 150, 100, 100); // center
+        }
+        drawBoard();
+
+        // Dice roll function
+        function rollDice() {
+            let dice = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("result").innerText = "Dice: " + dice;
+        }
+    </script>
+</body>
+
+</html>
