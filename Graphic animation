@@ -1,0 +1,21 @@
+
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("black")
+screen.title("Python Graphics - Flower")
+
+t = turtle.Turtle()
+t.speed(0)
+t.pensize(2)
+
+colors = ["red", "orange", "yellow", "pink",
+          "cyan", "magenta", "lime", "white"]
+
+for i in range(72):
+    t.color(colors[i % len(colors)])
+    t.circle(100)
+    t.left(5)
+
+t.hideturtle()
+turtle.done()
